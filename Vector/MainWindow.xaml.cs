@@ -16,8 +16,9 @@ using System.Windows.Shapes;
 namespace Vector
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// базовый элемент всех векторных объектов
     /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
