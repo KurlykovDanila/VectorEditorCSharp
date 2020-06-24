@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Vector.src.Model.Shapes
 {
-    class VecEllipse
+    class VecEllipse : VecShape
     {
+        public double height { get; set; }
+        public double width { get; set; }
     }
 }
