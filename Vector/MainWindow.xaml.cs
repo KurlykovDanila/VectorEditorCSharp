@@ -14,10 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Vector
-{
-    /// <summary>
-    /// базовый элемент всех векторных объектов
-    /// </summary>
 
     public partial class MainWindow : Window
     {
