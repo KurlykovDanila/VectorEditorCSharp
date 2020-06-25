@@ -7,10 +7,10 @@ using System.Windows;
 
 namespace Vector.src.Model.Shapes
 {
-    class VecEllipse : VecShape
+    class VecPolyLine : VecShape
     {
-        public Point TopLeftPoint { get; set; }
-        public double Height { get; set; }
-        public double Width { get; set; }
+        public List<Point> Points { get; set; }
+        public double Curve { get; set; }
+        public bool Closed { get; set; }
     }
 }

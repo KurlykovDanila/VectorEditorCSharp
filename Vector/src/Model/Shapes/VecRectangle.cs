@@ -7,9 +7,10 @@ using System.Windows;
 
 namespace Vector.src.Model.Shapes
 {
-    class VecLine : VecShape
+    class VecRectangle : VecShape
     {
-        public List<Point> points { get; set; }
-        public double curve { get; set; }
+        public Point TopLeftPoit { get; set; }
+        public double Height { get; set; }
+        public double Width { get; set; }
     }
 }
