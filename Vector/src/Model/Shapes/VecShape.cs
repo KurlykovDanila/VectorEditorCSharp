@@ -15,8 +15,8 @@ namespace Vector.src.Model
         public double OutlineSize { get; set; }
         public double TiltAngle { get; set; }
         public uint LevelOfVisibility { get; set; }
-        public bool visible { get; set; } = true;
-        public string name { get; set; }
+        public bool Visible { get; set; } = true;
+        public string Name { get; set; }
 
         public abstract void ConvertShapeToSVG();
         public abstract List<Point> ReturnAllPoints();

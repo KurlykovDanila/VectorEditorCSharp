@@ -8,12 +8,12 @@ namespace Vector.src.Model
 {
     class Workspace
     {
-        public string name { get; set; }
+        public string Name { get; set; }
         private List<Layer> Layers = new List<Layer>();
 
         public Workspace(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
         public Layer CreateNewLayer(uint LevelOfVisibility)

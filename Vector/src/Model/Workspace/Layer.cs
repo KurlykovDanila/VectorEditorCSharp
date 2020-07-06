@@ -15,7 +15,7 @@ namespace Vector.src.Model
 
         public List<VecShape> VecShapes { get; set; } = new List<VecShape>();
         public uint LevelOfVisibility { get; set; }
-        public bool visible { get; set; } = true;
-        public string name { get; set; }
+        public bool Visible { get; set; } = true;
+        public string Name { get; set; }
     }
 }
