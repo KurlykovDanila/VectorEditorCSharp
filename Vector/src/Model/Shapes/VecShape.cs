@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media;
 
-namespace Vector.src.Model.Shapes
+namespace Vector.src.Model
 {
-    class VecShape
+    abstract class VecShape : IConvertibleToSVG, IReturnPoints, IChangeableScale
     {
         public Color ShapeColor { get; set; }
         public Color OutlineColor { get; set; }
         public double OutlineSize { get; set; }
         public double TiltAngle { get; set; }
+        public uint LevelOfVisibility { get; set; }
+        public bool visible { get; set; } = true;
+        public string name { get; set; }
+
+        public abstract void ConvertShapeToSVG();
+        public abstract List<Point> ReturnAllPoints();
+        public abstract void ScaledResizing(double scale);
     }
 }

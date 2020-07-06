@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,10 +56,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="src\Model\Interfaces\IChangeableScale.cs" />
+    <Compile Include="src\Model\Interfaces\IConvertibleToSVG.cs" />
+    <Compile Include="src\Model\Interfaces\IReturnPoints.cs" />
     <Compile Include="src\Model\Shapes\VecEllipse.cs" />
     <Compile Include="src\Model\Shapes\VecPolyLine.cs" />
     <Compile Include="src\Model\Shapes\VecRectangle.cs" />
     <Compile Include="src\Model\Shapes\VecShape.cs" />
+    <Compile Include="src\Model\Workspace\Layer.cs" />
+    <Compile Include="src\Model\Workspace\Workspace.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,8 +104,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\Model\Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
