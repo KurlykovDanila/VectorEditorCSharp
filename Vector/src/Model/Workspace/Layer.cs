@@ -17,5 +17,7 @@ namespace Vector.src.Model
         public uint LevelOfVisibility { get; set; }
         public bool Visible { get; set; } = true;
         public string Name { get; set; }
+        public static uint maxLevelOfVisibility { get; set; } = 0;
+        public static uint minLevelOfVisibility { get; set; } = 0;
     }
 }

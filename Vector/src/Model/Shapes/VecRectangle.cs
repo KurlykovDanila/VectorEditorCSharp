@@ -23,6 +23,11 @@ namespace Vector.src.Model
             throw new NotImplementedException();
         }
 
+        public override void Rotate(int angle)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void ScaledResizing(double scale)
         {
             throw new NotImplementedException();

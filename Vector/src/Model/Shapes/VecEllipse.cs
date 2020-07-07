@@ -12,6 +12,7 @@ namespace Vector.src.Model
         public Point TopLeftPoint { get; set; }
         public double Height { get; set; }
         public double Width { get; set; }
+        private Point CenterPoint;
 
 
         public override void ConvertShapeToSVG()
@@ -25,6 +26,11 @@ namespace Vector.src.Model
         }
 
         public override void ScaledResizing(double scale)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Rotate(int angle)
         {
             throw new NotImplementedException();
         }

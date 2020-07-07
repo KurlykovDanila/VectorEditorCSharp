@@ -24,7 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>default</LangVersion>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,10 +60,13 @@
     <Compile Include="src\Model\Interfaces\IChangeableScale.cs" />
     <Compile Include="src\Model\Interfaces\IConvertibleToSVG.cs" />
     <Compile Include="src\Model\Interfaces\IReturnPoints.cs" />
+    <Compile Include="src\Model\Interfaces\IRotatable.cs" />
+    <Compile Include="src\Model\Shapes\RectangularArea.cs" />
     <Compile Include="src\Model\Shapes\VecEllipse.cs" />
     <Compile Include="src\Model\Shapes\VecPolyLine.cs" />
     <Compile Include="src\Model\Shapes\VecRectangle.cs" />
     <Compile Include="src\Model\Shapes\VecShape.cs" />
+    <Compile Include="src\Model\Tools\Tool.cs" />
     <Compile Include="src\Model\Workspace\Layer.cs" />
     <Compile Include="src\Model\Workspace\Workspace.cs" />
     <Page Include="MainWindow.xaml">
