@@ -22,6 +22,6 @@ namespace Vector.src.Model
         public abstract void ConvertShapeToSVG();
         public abstract List<Point> ReturnAllPoints();
         public abstract void ScaledResizing(double scale);
-        public abstract void Rotate(int angle);
+        public abstract void Rotate(double angle);
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vector.src.Model
+namespace Vector.src.Model.Interfaces
 {
-    interface IRotatable
+    interface ICreatable
     {
-        void Rotate(double angle);
     }
 }

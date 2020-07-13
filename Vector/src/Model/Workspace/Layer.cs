@@ -13,11 +13,17 @@ namespace Vector.src.Model
             LevelOfVisibility = levelOfVisibility;
         }
 
+        public VecShape FocusVecShape = null;
         public List<VecShape> VecShapes { get; set; } = new List<VecShape>();
         public uint LevelOfVisibility { get; set; }
         public bool Visible { get; set; } = true;
         public string Name { get; set; }
         public static uint maxLevelOfVisibility { get; set; } = 0;
         public static uint minLevelOfVisibility { get; set; } = 0;
+
+        public void SelectFocusShape(VecShape newFocusVecShape)
+        {
+            FocusVecShape = newFocusVecShape ?? FocusVecShape;
+        }
     }
 }

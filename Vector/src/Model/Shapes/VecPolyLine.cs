@@ -23,7 +23,7 @@ namespace Vector.src.Model
             throw new NotImplementedException();
         }
 
-        public override void Rotate(int angle)
+        public override void Rotate(double angle)
         {
             throw new NotImplementedException();
         }

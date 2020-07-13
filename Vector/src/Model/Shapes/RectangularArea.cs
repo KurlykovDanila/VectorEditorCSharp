@@ -9,14 +9,12 @@ namespace Vector.src.Model
 {
     class RectangularArea : IRotatable
     {
-        public Point RightTop;
         public Point LeftTop;
-        public Point RightBottom;
-        public Point LeftBottom;
-        public Point CenterPoint;
-        public int AngleOfRotation = 0;
+        public double Width;
+        public double Height;
+        public double AngleOfRotation = 0;
 
-        public void Rotate(int angle)
+        public void Rotate(double angle)
         {
             AngleOfRotation = (AngleOfRotation + angle) % 360;
             // Write how the points will change when turning

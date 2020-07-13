@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vector.src.Model
+namespace Vector.src.Model.Tools
 {
-    interface IRotatable
+    class ToolCreateRectangle
     {
-        void Rotate(double angle);
     }
 }
